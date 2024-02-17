@@ -1,0 +1,93 @@
+# Игнорировать временные файлы и каталоги создаваемые операционной системой
+.DS_Store
+Thumbs.db
+
+# Игнорировать файлы и папки, созданные npm или yarn
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Игнорировать файлы и папки, созданные Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite
+*.log
+*.tmp
+*.swp
+*.db-journal
+__pycache__/
+
+# Игнорировать файлы и папки, созданные Java
+*.class
+*.jar
+*.war
+*.ear
+target/
+.idea/
+.gradle/
+build/
+.gradle/
+bin/
+
+# Игнорировать файлы и папки, созданные Ruby
+.bundle/
+Gemfile.lock
+/vendor/bundle/
+/vendor/cache/
+/.config
+/yarn-error.log
+
+# Игнорировать файлы и папки, созданные PHP
+/vendor/
+composer.phar
+composer.lock
+composer.json
+*.log
+*.sqlite
+
+# Игнорировать файлы и папки, созданные C/C++
+*.out
+*.app
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Игнорировать файлы и папки, созданные Swift
+.build/
+DerivedData/
+xcuserdata/
+*.xcodeproj/project.xcworkspace/
+*.xcuserdatad/
+
+# Игнорировать файлы и папки, созданные .NET
+bin/
+obj/
+*.suo
+*.user
+*.sln
+*.csproj.user
+*.ide
+
+# Игнорировать файлы и папки, созданные Android
+/build/
+/local.properties
+
+# Игнорировать файлы и папки, созданные Node.js
+npm-debug.log
+yarn-error.log
+node_modules/
+
+# Игнорировать файлы и папки, созданные Vue.js
+/node_modules/
+/dist/
+
+# Игнорировать файлы и папки, созданные React
+/node_modules/
+/build/
+/.idea/
