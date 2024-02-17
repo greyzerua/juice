@@ -53,7 +53,8 @@ function images() {
 }
 
 function sprite() {
-    return src('app/images/*.svg')
+    return src('app/images/*.svg',
+               '!app/images/**/*.html',)
         .pipe(svgSprite({
             mode: {
                 stack: {
@@ -67,7 +68,8 @@ function sprite() {
 
 function scripts() {
     return src([
-        'app/js/main.js',
+        'app/js/*.js',
+        '!app/js/main.min.js',
         'node_modules/@fortawesome/fontawesome-free/js/all.min.js'
     ])
         .pipe(concat('main.min.js'))
@@ -91,9 +93,9 @@ function watching() {
             baseDir: "app/"
         }
     });
-    watch(['app/scss/*.scss'], styles)
+    watch(['app/scss/**/*.scss'], styles)
     watch(['app/images/src'], images)
-    watch(['app/js/main.js'], scripts)
+    watch(['app/js/*.js','!app/js/main.min.js',], scripts)
     watch(['app/components/*', 'app/pages/*'], pages)
     watch(['app/*.html']).on('change', browserSync.reload);
 }

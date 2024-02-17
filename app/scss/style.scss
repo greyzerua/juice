@@ -1,9 +1,11 @@
 @import '_nullstyle.scss';
 @import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
-@font-face {
-    font-family: 'Stolzl';
-    src: url('../fonts/stolzl_regular.woff2');
-}
+@import "_header.scss";
+@import "_footer.scss";
+@import "_buttons.scss";
+@import '_fonts.scss';
+@import "./blocks/_main.scss";
+
 body {
     background-color: #ec5928;
 }
