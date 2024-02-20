@@ -1,0 +1,147 @@
+.slider-rotate__arrow i {
+  font-size: 46px;
+}
+
+.position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #ffffff;
+  font-size: 30px;
+  display: none;
+}
+
+.slider-rotate {
+  margin: 0 auto;
+}
+
+.slider-rotate__container {
+  margin: 0 auto;
+}
+
+#slider-2 {
+  margin: 50px 0;
+  background: #ffffff;
+}
+
+/* ------------------------------------------------------- */
+
+/* ------------------------------------------------------- */
+
+/* ------------------------------------------------------- */
+
+/* ------------------------------------------------------- */
+
+/* ------------------------------------------------------- */
+
+/* --                       PLUGIN                      -- */
+
+/* ------------------------------------------------------- */
+
+.slider-rotate__container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  visibility: hidden;
+  margin-top: 350px;
+}
+
+/*  --------------------------------------------------  */
+
+/*  --              ITEMS DISPLAY                     --*/
+
+/*  --------------------------------------------------  */
+
+.slider-rotate__item {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  -webkit-transform: translateY(-50%) translateX(-50%) scale(0.8);
+  -moz-transform: translateY(-50%) translateX(-50%) scale(0.8);
+  -ms-transform: translateY(-50%) translateX(-50%) scale(0.8);
+  -o-transform: translateY(-50%) translateX(-50%) scale(0.8);
+  transform: translateY(-50%) translateX(-50%) scale(0.8);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  img {
+    height: 700px;
+  }
+}
+
+.slider-rotate__item.slider-rotate__item--next {
+  left: 74%;
+}
+
+.slider-rotate__item.slider-rotate__item--prev {
+  left: 26%;
+}
+
+.slider-rotate__item.slider-rotate__item--prev,
+.slider-rotate__item.slider-rotate__item--next {
+  opacity: 0.7;
+  z-index: 2;
+}
+
+.slider-rotate__item.slider-rotate__item--next-2 {
+  left: 90%;
+}
+
+.slider-rotate__item.slider-rotate__item--prev-2 {
+  left: 10%;
+}
+
+.slider-rotate__item.slider-rotate__item--next-2,
+.slider-rotate__item.slider-rotate__item--prev-2 {
+  opacity: 1;
+  z-index: 2;
+  transform: translateY(-50%) translateX(-50%) scale(0.4);
+}
+
+.slider-rotate__item.slider-rotate__item--active {
+  z-index: 2;
+  opacity: 1;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%) scale(1);
+  background-image: url(../images/im.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*  --------------------------------------------------  */
+
+/*  --                    ARROWS                      --*/
+
+/*  --------------------------------------------------  */
+
+.slider-rotate__container .slider-rotate__arrow {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+}
+
+.slider-rotate__container .slider-rotate__arrow:hover {
+  background: #ffffff;
+}
+
+.slider-rotate__container .slider-rotate__arrow:hover i {
+  color: #000000;
+}
+
+.slider-rotate__container .slider-rotate__arrow.slider-rotate__arrow--left {
+  left: 0;
+}
+
+.slider-rotate__container .slider-rotate__arrow.slider-rotate__arrow--right {
+  right: 0;
+}

@@ -1,2 +1,70 @@
-<!--=include header.html -->
-<!--=include footer.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <script type="module" src="js/main.min.js"></script>
+    <title>Raw juice</title>
+  </head>
+  <body>
+    <main>
+      <section class="main">
+        <header class="header width-container">
+          <div class="header__wrap">
+            <nav class="header__nav">
+              <ul>
+                <li><a href="#" class="nav-link">Tastes</a></li>
+                <li><a href="#" class="nav-link">About Us</a></li>
+                <li><a href="#" class="nav-link">Competition</a></li>
+              </ul>
+            </nav>
+            <div class="header__logo">
+              <a href="#" class="header__link">
+                <div>Juise</div>
+                <p>r<span>a</span>w</p>
+              </a>
+            </div>
+            <div class="header__icons">
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+              <div class="header__basket">
+                <div class="header__basket-wrap">
+                  <div class="header__basket-counter">0</div>
+                  <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="carousel">
+          <div class="list">
+              <div class="item active" style="--background: #a52527">
+                  <div class="content">Strawberry</div>
+                  <img src="../images/fruit_strawberry.png" class="fruit">
+              </div>
+              <div class="item" style="--background: #2D5643">
+                  <div class="content">avocado</div>
+                  <img src="../images/fruit_avocado.png" class="fruit">
+              </div>
+              <div class="item" style="--background: #ebb340">
+                  <div class="content">orange</div>
+                  <img src="../images/fruit_orange.png" class="fruit">
+              </div>
+          </div>
+          <div class="leaves"></div>
+          <div class="mockup"></div>
+          <div class="shadow"></div>
+          <div class="arrow">
+              <button id="prev"><</button>
+              <button id="next">></button>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+    <!--=include footer.html -->
+  </body>
+</html>

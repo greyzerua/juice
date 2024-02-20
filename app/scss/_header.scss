@@ -1,0 +1,114 @@
+.nav-link {
+  font-family: "FuturaPT-Bold";
+  font-size: 18px;
+  position: relative;
+  transition-property: transform;
+  transition: 0.25s ease;
+  &::after {
+    content: '';
+    border-top: 3px solid white;
+    width: 100%;
+    position: absolute;
+    display: block;
+    transform: rotateY(90deg);
+    transition:transform 0.25s linear;
+  }
+  &:hover {
+    transform: scale(1);
+  }
+  &:hover::after {
+    transform: rotate(0deg);
+  }
+}
+.header {
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 78px;
+    position: relative;
+    z-index: 40;
+  }
+  &__link {
+    text-transform: uppercase;
+    font-family: "FuturaPT-Bold";
+    div {
+      display: flex;
+      font-size: 16px;
+      width: 100%;
+      padding: 5px 13px;
+      background-color: #191919;
+      justify-content: center;
+      align-items: center;
+    }
+    p {
+      font-size: 32px;
+
+      span {
+        line-height: 0;
+        font-size: 40px;
+      }
+    }
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-right: 80px;
+    a {
+      transition: 0.2s all;
+      font-size: 23px;
+      will-change: contents;
+      &:hover {
+        transform: rotate(-10deg);
+      }
+    }
+  }
+  &__nav {
+    ul {
+      display: flex;
+      gap: 50px;
+    }
+  }
+  &__basket {
+    display: flex;
+    color: #fff;
+    overflow: hidden;
+    width: 49px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-height: 115px;
+    border-radius: 0 0 24px 24px;
+    background-color: #191919;
+    justify-content: center;
+    align-items: flex-end;
+
+    &-wrap {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      a {
+        opacity: 1;
+        margin: 7px 0 15px;
+        font-size: 23px;
+      }
+    }
+    &-counter {
+      width: 100%;
+      font-size: 15px;
+      display: flex;
+      background: antiquewhite;
+      align-items: center;
+      justify-content: center;
+      padding: 4px 17px 5px 20px;
+      background-color: #f6c058;
+    }
+  }
+  &__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
