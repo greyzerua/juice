@@ -73,7 +73,7 @@ function scripts() {
         'node_modules/@fortawesome/fontawesome-free/js/all.min.js'
     ])
         .pipe(concat('main.min.js'))
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(dest('app/js'))
         .pipe(browserSync.stream())
 }
