@@ -24,17 +24,17 @@ prev.onclick = () => {
     changeCarousel();
 }
 function changeCarousel() {
-    // find item has class hidden to remove it
+
     let hidden_old = document.querySelector('.item.hidden');
     if(hidden_old) hidden_old.classList.remove('hidden');
 
-    // find item old active to remove it and add class hidden
+    
     let active_old = document.querySelector('.item.active');
     active_old.classList.remove('active');
     active_old.classList.add('hidden');
-    // add class active in position active new
+  
     list[active].classList.add('active');
-    // change mockup background
+   
     mockup.style.setProperty('--left', leftMockup + '%');
 
     clearInterval(refreshInterval);
@@ -42,7 +42,7 @@ function changeCarousel() {
 }
 
 
-// auto run 3s
+
 let refreshInterval = setInterval(()=> {next.click()}, 13000);
 
 
@@ -55,8 +55,8 @@ document.querySelector('.main').addEventListener('mousemove', function(e) {
     const centerX = rect.left + rect.width / 2;
     const centerY = rect.top + rect.height / 2;
 
-    const moveX = (mouseX - centerX) / 130; // Настройте скорость движения
-    const moveY = (mouseY - centerY) / 130; // Настройте скорость движения
+    const moveX = (mouseX - centerX) / 130;
+    const moveY = (mouseY - centerY) / 130;
 
     const activeItem = document.querySelector('.item.active');
     const fruit = activeItem.querySelector('.fruit');

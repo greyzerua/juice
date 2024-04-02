@@ -5,13 +5,13 @@
   transition-property: transform;
   transition: 0.25s ease;
   &::after {
-    content: '';
+    content: "";
     border-top: 3px solid white;
     width: 100%;
     position: absolute;
     display: block;
     transform: rotateY(90deg);
-    transition:transform 0.25s linear;
+    transition: transform 0.25s linear;
   }
   &:hover {
     transform: scale(1);
@@ -60,14 +60,16 @@
       font-size: 23px;
       will-change: contents;
       &:hover {
-        transform: rotate(-10deg);
+        transform: scale(1.1);
       }
     }
   }
   &__nav {
     ul {
       display: flex;
-      gap: 50px;
+      gap: 20px 50px;
+      flex-wrap: wrap;
+      max-width: 500px;
     }
   }
   &__basket {
@@ -90,9 +92,13 @@
       flex-direction: column;
       align-items: center;
       a {
-        opacity: 1;
         margin: 7px 0 15px;
-        font-size: 23px;
+        img {
+          transition: 0.2s all;
+          &:hover{
+            transform: scale(1.1);
+          }
+        }
       }
     }
     &-counter {
@@ -110,5 +116,16 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 915px) { 
+  .header__nav {
+    ul {
+      display: none;
+    }
+  }
+  .header__icons {
+    display: none;
   }
 }

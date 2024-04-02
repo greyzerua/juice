@@ -4,8 +4,10 @@
 @import "_footer.scss";
 @import '_fonts.scss';
 @import '_slider.scss';
+@import '_burger.scss';
 @import "./blocks/_main.scss";
-
+@import "./blocks/_catalog.scss";
+@import "./blocks/_top-product.scss";
 body {
     font-family: 'FuturaPT';
 }
@@ -16,4 +18,22 @@ a{
     margin: 0 auto;
     max-width: 1360px;
     padding: 0 15px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+  }
+  .title__wrap {
+    position: relative;
+    img {
+      position: absolute;
+      top: -11px;
+      right: -24px;
+    }
+    h2 {
+      font-family: "FuturaPT-Medium";
+      font-size: 42px;
+      color: #000;
+    }
   }

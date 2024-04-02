@@ -1,0 +1,158 @@
+.top-product__cards {
+  display: flex;
+  gap: 31px;
+  padding-top: 73px;
+}
+.card-gradient {
+  display: flex;
+  box-shadow: 5px 8.7px 24px 0 rgba(9, 6, 50, 0.09);
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  cursor: pointer;
+  width: 46.5%;
+  &:nth-child(1n) {
+    background-image: linear-gradient(to top, #ffea60, #da831c);
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(
+        to bottom,
+        hsl(344, 53%, 51%),
+        hsl(31, 86%, 48%)
+      );
+      z-index: -1;
+      transition: opacity 0.3s linear;
+      opacity: 0;
+    }
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+  &:nth-child(2n) {
+    background-image: none;
+    background-color: #fff;
+    width: 31.6%;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom, hsl(0deg 61.33% 51.53%), hsl(49.85deg 79.1% 44.2%));
+      z-index: -1;
+      transition: opacity 0.3s linear;
+      opacity: 0;
+    }
+    &:hover::before {
+      opacity: 1;
+    }
+    p{
+      color: black;
+    }
+    .card-gradient__info {
+      h2 {
+        color: #191919;
+      }
+    }
+    .card-gradient__info-subtitle {
+      background-color: #e6e6e6;
+    }
+    .card-gradient__img {
+      background-color: #e6e6e6;
+    }
+    .card-gradient__info {
+      max-width: 39%;
+    }
+    .card-gradient__info-stars {
+      svg {
+        color: black;
+      }
+    }
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 10px;
+  }
+  &__img {
+    display: flex;
+    align-items: center;
+    min-width: 276px;
+    height: 276px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 100;
+    img {
+      width: 261px;
+    }
+  }
+  &__info {
+    max-width: 56%;
+    &-price {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .btn-basket {
+        position: unset;
+      }
+    }
+    margin-left: 33px;
+    p {
+      font-size: 16px;
+      color: #fff;
+    }
+    h2 {
+      font-family: "FuturaPT-Demi";
+      color: #fff;
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+    &-subtitle {
+      &__wrap {
+        position: relative;
+        height: 24px;
+      }
+      display: flex;
+      position: absolute;
+      height: 100%;
+      left: -97px;
+      width: 270px;
+      background-color: #fff;
+      align-items: center;
+      justify-content: flex-end;
+      span {
+        font-family: "FuturaPT-Bold";
+        width: 100%;
+        font-size: 18px;
+        text-align: right;
+        color: #000;
+        text-transform: uppercase;
+        margin-right: 22px;
+      }
+    }
+    &-stars {
+      margin: 12px 0px 15px;
+      svg {
+        font-size: 18px;
+        color: white;
+        &:nth-child(5n) {
+          font-size: 19px;
+        }
+      }
+    }
+    .card-gradient__info-price {
+      margin-top: 20px;
+      p {
+        font-family: "FuturaPT-Bold";
+        font-size: 30.5px;
+      }
+    }
+  }
+}

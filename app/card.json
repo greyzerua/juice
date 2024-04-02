@@ -1,0 +1,89 @@
+[
+  {
+    "image": "./images/fruit-basket-orange.png",
+    "name": "Valancia Orange",
+    "oldPrice": 19.0,
+    "price": 10.0,
+    "id": 2,
+    "type": "juice",
+    "btnImage": "./images/icon-bag.png"
+  },
+  {
+    "image": "./images/fruit-basket-sug.png",
+    "name": "Sugarcane Raw Juice",
+    "oldPrice": 25.0,
+    "price": 20.0,
+    "id": 3,
+    "type": "juice",
+    "btnImage": "./images/icon-bag.png"
+  },
+  {
+    "image": "./images/fruit-basket-lean.png",
+    "name": "Lean Raw Juice",
+    "oldPrice": 32.0,
+    "price": 30.0,
+    "id": 4,
+    "type": "juice",
+    "btnImage": "./images/icon-bag.png"
+  },
+  {
+    "image": "./images/coffee.png",
+    "name": "Raw Coffee",
+    "oldPrice": 19.0,
+    "price": 5.0,
+    "id": 5,
+    "type": "coffee",
+    "btnImage": "./images/icon-bag.png"
+  },
+  {
+    "image": "./images/tea.png",
+    "name": "Raw Tea",
+    "oldPrice": 19.0,
+    "price": 4.0,
+    "id": 6,
+    "type": "tea",
+    "btnImage": "./images/icon-bag.png"
+  },
+  {
+    "image": "./images/water.png",
+    "name": "Raw Water",
+    "oldPrice": 19.0,
+    "price": 8.0,
+    "id": 7,
+    "type": "water",
+    "btnImage": "./images/icon-bag.png"
+  },
+  {
+    "image": "./images/mixed.png",
+    "name": "Mixed Raw Juice",
+    "oldPrice": 28.0,
+    "price": 25.0,
+    "id": 8,
+    "type": "juice",
+    "btnImage": "./images/icon-bag.png"
+  },
+  {
+    "image": "./images/fruit-mango.png",
+    "name": "Mango Raw Juice",
+    "oldPrice": 28.0,
+    "price": 25.0,
+    "id": 9,
+    "type": "juice",
+    "description": "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasiarchitecto beatae vitae dicta sunt, explicabo.",
+    "topProduct": true,
+    "topProductImage": "./images/product-mango.png",
+    "btnImage": "./images/icon-bag.png"
+  },
+  {
+    "image": "./images/fruit-basket-red.png",
+    "name": "Life Raw Juice",
+    "oldPrice": 19.0,
+    "price": 15.0,
+    "id": 10,
+    "type": "juice",
+    "topProduct": true,
+    "topProductImage": "./images/product-life.png",
+    "btnImage": "./images/icon-bag.png",
+    "description": "Sed ut perspiciclis, unde omnis iste notus error sit volupralemaccusantium doloremaue laucchium, totem rem"
+  }
+]
