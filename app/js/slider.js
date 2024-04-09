@@ -61,6 +61,9 @@ document.querySelector('.main').addEventListener('mousemove', function(e) {
     const activeItem = document.querySelector('.item.active');
     const fruit = activeItem.querySelector('.fruit');
     fruit.style.transform = `translate(-50%, -50%) translate(${moveX}px, ${moveY}px)`;
+    if (window.matchMedia("(max-width: 920px)").matches) {
+        fruit.style.transform = ``;
+    }
 
     const shadow = document.querySelector('.shadow');
     shadow.style.transform = `translateX(-50%) translateY(${moveY / 10}px)`;
